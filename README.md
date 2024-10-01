@@ -59,20 +59,14 @@ Saved at `D:/GUVI_Projects/My_Projects/singapur sheets/cleaned_singapore_resale_
 
 ## Model Selection and Training
 
-**Models**: 
-- **Linear Regression**
-  - **MAE**: 44,675.46
-  - **MSE**: 3,471,868,626.57
-  - **RMSE**: 58,922.56
-  - **R²**: 0.88
+**Model**: 
+****-Model: Random Forest Regressor**
 
-- **Decision Tree Regressor**
-  - **MAE**: 19,798.11
-  - **MSE**: 875,120,013.52
-  - **RMSE**: 29,582.43
-  - **R²**: 0.97
-
-**Selected Model**: Decision Tree Regressor (saved at `D:/GUVI_Projects/My_Projects/singapur sheets/decision_tree_model.joblib`)
+MAE: 20,096.53
+MSE: 862,841,410.73
+RMSE: 29,374.16
+R²: 0.96
+Best Model saved at: D:/Final_Projects/project_new/random_forest_best_model.joblib
 
 ## How to Run the Project
 
