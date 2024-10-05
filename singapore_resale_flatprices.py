@@ -36,6 +36,31 @@ except Exception as e:
 # Debug: Show the first few rows of the dataset to verify its structure
 st.write("Dataset Preview:", data.head())
 
+# Introduction section with project details
+st.title("Singapore Resale Flat Prices Predicting")
+st.markdown(""" 
+**Skills Takeaway From This Project:**
+- Data Wrangling
+- Exploratory Data Analysis (EDA)
+- Model Building
+- Model Deployment
+
+**Domain:**
+- Real Estate
+
+**Problem Statement:**
+- The objective of this project is to develop a machine learning model and deploy it as a user-friendly web application that predicts the resale prices of flats in Singapore. This predictive model will be based on historical data of resale flat transactions, and it aims to assist both potential buyers and sellers in estimating the resale value of a flat.
+
+**Creator:**
+- Shubhangi Patil
+
+**Project:**
+- Data Science
+
+**GitHub Link:**
+- [GitHub Repository](https://github.com/shubhangivspatil)
+""")
+
 # Get unique values for categorical features from the cleaned dataset
 storey_range_options = data['storey_range'].unique().tolist()
 town_options = data['town'].unique().tolist()
@@ -116,4 +141,3 @@ if submit:
         st.success(f"The predicted resale price for the flat is: SGD {predicted_price:.2f}")
     except Exception as e:
         st.error(f"Error making prediction: {str(e)}")
-
